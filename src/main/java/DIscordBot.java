@@ -12,7 +12,7 @@ public class DIscordBot extends ListenerAdapter {
     public static void main(String[] args) throws LoginException {
         JDA bot= JDABuilder.createDefault("token")
                 .addEventListeners(new DIscordBot())
-                .setActivity(Activity.playing("в очко Рафа"))
+                .setActivity(Activity.playing("Beerball"))
                 .build();
         bot.upsertCommand("roll","Gives a randon number between 1 and 100").queue();
 
